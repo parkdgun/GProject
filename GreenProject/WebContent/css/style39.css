@@ -1,55 +1,129 @@
 @charset "utf-8";
+
 @import "reset.css";
 
-body{	font-size:12px;	font-family:"맑은고딕",dotum,sans-serif;	color:#555;}
-/*상단 컬러*/
-#header {background-color: #00CDFF;}
+body {
+	font-size: 12px;
+	font-family: "맑은고딕", dotum, sans-serif;
+	color: #555;
+}
 
-/*#header_wrap{ position:absolute; width:100%; left:0px; top:0px; z-index:100; }*/
+/*상단 컬러*/
+#header {
+	background-color: #00CDFF;
+}
 
 /*헤더 탑 메뉴 */
-#header_top{ width:1024px; height:70px; margin:0 auto; background:green;}
+#header_top {
+	width: 1024px;
+	height: 70px;
+	margin: 0 auto;
+	background: green;
+}
 
 /*상단 리스트 +로고 */
-#header_top h1{ width:221px; height:41px; margin-top: 15px; text-indent:-9999px; float:left; background:url(img/jejuairlogo_kr.png) no-repeat;	}
+#header_top h1 {
+	width: 221px;
+	height: 41px;
+	margin-top: 15px;
+	text-indent: -9999px;
+	float: left;
+	background: url(img/jejuairlogo_kr.png) no-repeat;
+}
 
 /*상단 리스트 플롯 값 */
-#header_top ul.gnb1{ float:right; margin-top:41px;	}
+#header_top ul.gnb1 {
+	float: right;
+	margin-top: 41px;
+}
 
 /*상단 리스트 구분선 추가 및 첫번째 삭제 ,리스트 컬러*/
-#header_top ul.gnb1 li{ float:left; padding:0 10px; background:url(img/global_line.gif) no-repeat left center;	}
-#header_top ul.gnb1 li.first{ padding-left:0px; background:none; font-weight:bold;}
-#header_top ul.gnb1 li.first a{color: #0078ff;}
-#header_top ul.gnb1 li.last{ padding-right:0px;	}
+#header_top ul.gnb1 li {
+	float: left;
+	padding: 0 10px;
+	background: url(img/global_line.gif) no-repeat left center;
+}
+
+#header_top ul.gnb1 li.first {
+	padding-left: 0px;
+	background: none;
+	font-weight: bold;
+}
+
+#header_top ul.gnb1 li.first a {
+	color: #0078ff;
+}
+
+#header_top ul.gnb1 li.last {
+	padding-right: 0px;
+}
 
 /*메인리스트 */
-#gnb_wrap{ width:100%; height:45px; background:#06C; position:relative;	}
+#gnb_wrap {
+	width: 100%;
+	height: 45px;
+	background: #06C;
+	position: relative;
+}
 
 /*메인 리스트 정렬 */
-#gnb_wrap .main_gnb{ position:absolute; width:1024px; top:0px; left:50%; margin-left:-512px;
-					 z-index:30;	}
+#gnb_wrap .main_gnb {
+	position: absolute;
+	width: 1024px;
+	top: 0px;
+	left: 50%;
+	margin-left: -512px;
+	z-index: 30;
+}
 
 /*메인리스트 플롯값 설정 */
-#gnb_wrap .main_gnb>li{ float:left; width:170px;	}
-#gnb_wrap .main_gnb>li.last{ width:171px;	}
+#gnb_wrap .main_gnb > li {
+	float: left;
+	width: 170px;
+}
+
+#gnb_wrap .main_gnb > li.last {
+	width: 171px;
+}
 
 /*메인 리스트 링크 폰트 설정 */
-#gnb_wrap .main_gnb>li>a{ display:block; width:100%; height:45px; text-align:center; 
-						  line-height:45px; font-size:17px; font-weight:bold; color:#FFF;}
-						  
+#gnb_wrap .main_gnb > li > a {
+	display: block;
+	width: 100%;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	font-size: 17px;
+	font-weight: bold;
+	color: #FFF;
+}
+
 /*서브 리스트 숨김 !! 수정필요 서브 리스트 길이 */
-#gnb_wrap .main_gnb ul { height: 100px; padding: 18px 0; background: #FFF; 
-						  border: 1px solid; display: none; text-align: center; }
+#gnb_wrap .main_gnb ul {
+	height: 100px;
+	padding: 18px 0;
+	background: #FFF;
+	border: 1px solid;
+	display: none;
+	text-align: center;
+}
 
 /*서브리스트 폰트 */
-#gnb_wrap .main_gnb	.sub li{font-size:14px; line-height:15px; margin-top:14px; }
-#gnb_wrap .main_gnb	.sub li:first-child{ margin-top:0px; }
-#gnb_wrap .main_gnb	.sub li a{ color:#333;	}
+#gnb_wrap .main_gnb	.sub li {
+	font-size: 14px;
+	line-height: 15px;
+	margin-top: 14px;
+}
+
+#gnb_wrap .main_gnb	.sub li:first-child {
+	margin-top: 0px;
+}
+
+#gnb_wrap .main_gnb	.sub li a {
+	color: #333;
+}
 
 /* 마우스 오버된 서브 리스트만 보이기 */
 #gnb_wrap .main_gnb :hover ul {
 	display: block;
 }
-
-
-
